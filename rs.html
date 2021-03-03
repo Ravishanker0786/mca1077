@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Payment Form</title>
+    <style>
+        .redElement{
+           color:red; background-color:skyblue;
+        }
+   /* this */
+    </style>
+</head>
+<body>
+    <form action="">
+     <h1> Payment Information</h1>
+     <p>Required filleds are mandatory by*</p>
+     <p>Name: * <input type="text" name="name" required></p>   
+     <fieldset>
+         <legend>Gender *</legend>
+     <p>
+         Male <input type="radio" name="gender" id="" required> Female  <input type="radio" name="gender" id=""required>
+     </p>
+    </fieldset>
+    <p class="redElement">Address:<textarea name="address" cols="100"rows="10"></textarea></p>
+    <p>Email:<input type="email" name="email" id="email"></p>
+    <p>Pincode:<input type="number" name="pincode"></p>
+<h2>
+          <hr>Card Details</hr>
+</h2>
+    <p> 
+    CardType:
+    <select name="cardtype"id="cardtype">
+        <option value="">--Select a CardType--</option>
+        <option value="mastercard">mastercard</option>
+        <option value="visa">visa</option>
+    </select>
+    </p>
+    <p>CardNumber<input type="number"name="cardnumber"id="cardnumber"></p>
+    <p>Expiration Date:<input type="date" name="exp_date" id="exp_date"></p>
+    <p>CVV<input type="password"name="cvv" id="cvv"required></p>
+    
+</form>
+    
+</body>
+</html>
